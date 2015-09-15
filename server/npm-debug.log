@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '--save', 'lodashnpm' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/Cheikhndiongue/wdi/projects/faverest/server/package.json
+6 warn package.json faverest@1.0.0 No description
+7 warn package.json faverest@1.0.0 No repository field.
+8 warn package.json faverest@1.0.0 No README data
+9 verbose installManyTop reading scoped package data from /Users/Cheikhndiongue/wdi/projects/faverest/server/node_modules/body-parser/package.json
+10 verbose installManyTop reading scoped package data from /Users/Cheikhndiongue/wdi/projects/faverest/server/node_modules/express/package.json
+11 verbose installManyTop reading scoped package data from /Users/Cheikhndiongue/wdi/projects/faverest/server/node_modules/method-override/package.json
+12 verbose installManyTop reading scoped package data from /Users/Cheikhndiongue/wdi/projects/faverest/server/node_modules/mongoose/package.json
+13 verbose installManyTop reading scoped package data from /Users/Cheikhndiongue/wdi/projects/faverest/server/node_modules/node-restful/package.json
+14 info package.json node-restful@0.2.2 No license field.
+15 verbose readDependencies loading dependencies from /Users/Cheikhndiongue/wdi/projects/faverest/server/package.json
+16 silly cache add args [ 'lodashnpm', null ]
+17 verbose cache add spec lodashnpm
+18 silly cache add parsed spec { raw: 'lodashnpm',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'lodashnpm',
+18 silly cache add   rawSpec: '',
+18 silly cache add   spec: '*',
+18 silly cache add   type: 'range' }
+19 silly addNamed lodashnpm@*
+20 verbose addNamed "*" is a valid semver range for lodashnpm
+21 silly addNameRange { name: 'lodashnpm', range: '*', hasData: false }
+22 silly mapToRegistry name lodashnpm
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/lodashnpm
+26 verbose addNameRange registry:https://registry.npmjs.org/lodashnpm not in flight; fetching
+27 verbose request uri https://registry.npmjs.org/lodashnpm
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 17:21:59
+30 verbose request id 1c203cd179818cd0
+31 http request GET https://registry.npmjs.org/lodashnpm
+32 http 404 https://registry.npmjs.org/lodashnpm
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '2',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 15 Sep 2015 21:22:00 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-atl6227-ATL',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1442352120.173339,VS0,VE29' }
+34 silly get cb [ 404,
+34 silly get   { 'content-type': 'application/json',
+34 silly get     'cache-control': 'max-age=0',
+34 silly get     'content-length': '2',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Tue, 15 Sep 2015 21:22:00 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-atl6227-ATL',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1442352120.173339,VS0,VE29' } ]
+35 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/lodashnpm
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+35 verbose stack     at Request.emit (events.js:110:17)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+35 verbose stack     at Request.emit (events.js:129:20)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+35 verbose stack     at IncomingMessage.emit (events.js:129:20)
+35 verbose stack     at _stream_readable.js:908:16
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose statusCode 404
+37 verbose pkgid lodashnpm
+38 verbose cwd /Users/Cheikhndiongue/wdi/projects/faverest/server
+39 error Darwin 14.5.0
+40 error argv "node" "/usr/local/bin/npm" "install" "--save" "lodashnpm"
+41 error node v0.12.5
+42 error npm  v2.11.2
+43 error code E404
+44 error 404 Registry returned 404 for GET on https://registry.npmjs.org/lodashnpm
+44 error 404
+44 error 404 'lodashnpm' is not in the npm registry.
+44 error 404 You should bug the author to publish it (or use the name yourself!)
+44 error 404 It was specified as a dependency of 'faverest'
+44 error 404
+44 error 404 Note that you can also install from a
+44 error 404 tarball, folder, http url, or git url.
+45 verbose exit [ 1, true ]
