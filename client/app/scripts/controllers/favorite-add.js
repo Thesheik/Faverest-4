@@ -10,6 +10,7 @@
  angular.module('clientApp')
  .controller('FavoriteAddCtrl', function (
   $scope,
+  $routeParams,
   Favorite,
   $location
 ) {
