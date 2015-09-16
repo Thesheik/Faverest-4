@@ -8,10 +8,15 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('FavoritesCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('FavoritesCtrl', function ($scope) {
+    $scope.favorites = [
+      {
+        title: 'Brentling Watch',
+        url:'http://ep.yimg.com/ay/movadobaby/breitling-navitimer-1461-m1938022-bd20-100w-16.gif'
+  },
+      {
+        title: 'Brentling Watch',
+        url:'http://ep.yimg.com/ay/movadobaby/breitling-navitimer-1461-m1938022-bd20-100w-16.gif'
+  }
+];
   });

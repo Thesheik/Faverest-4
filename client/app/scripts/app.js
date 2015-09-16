@@ -14,10 +14,14 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
+    'restangular',
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, RestangulerProvider) {
+
+    RestangulerProvider.setBaseUrl('http://localhost:3000');
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -36,5 +40,12 @@ angular
       })
       .otherwise({
         redirectTo: '/'
+      })
+      .factory('FavoriteRestangular', function(Restanguler){
+        return Restanguler.withConfi(function(RestangularConfigurer){
+          RestangularConfigurer.setRestangularFields({
+            id: '_id'
+          });
+        });
       });
   });

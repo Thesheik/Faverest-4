@@ -1,1 +1,15 @@
-<p>This is the favorites view.</p>
+<!-- creating a table for favorites
+repeat the tr element for every favorites and we are gonna assign a favorite variable. I can refence each title and url.  Use the object property. -->
+
+<table class="table table-striped">
+  <thead>
+    <th>Title</th>
+    <th>URL</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat='favorite in favorites'>
+      <td>{{ favorites.title }}</td>
+      <td>{{ favorites.url }}</td>
+    </tr>
+  </tbody>
+</table>
