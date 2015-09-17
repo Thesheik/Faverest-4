@@ -1,8 +1,18 @@
-%h1= @fav.title
-= image_tag @fav.photo_url
-%p= @fav.description
-%p= @fav.category
-Faved by
-=link_to "Back", root_path
-=link_to "Edit", edit_fav_path
-=link_to "Delete", fav_path, method: :delete, data: { confirm: "Are you sure?" }
+#fav_show.row
+  .col-md-8.col-md-offset-2
+    .panel.panel-default
+      .panel-heading.fav_photo_url
+        = image_tag @fav.photo_url
+      .panel-body
+        %h1= @fav.title
+        %p= @fav.description
+        %p= @fav.category
+      .panel-footer
+        .row
+          .col-md-6
+            %p.user
+            Faved by
+          .col-md-6
+            .btn-group.pull-right
+              =link_to "Edit", edit_fav_path, class: "btn btn-default"
+              =link_to "Delete", fav_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"

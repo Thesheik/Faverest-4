@@ -1,5 +1,5 @@
 class FavsController < ApplicationController
-  before_action :find_fav, only: [:show, :edit, :update, :destroy]
+  before_action :find_fav, only: [:show, :edit, :update, :destroy, :email]
   def index
     @favs = Fav.all.order("created_at DESC")
   end

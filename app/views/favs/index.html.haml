@@ -1,3 +1,6 @@
-- @favs.each do |fav|
-  = link_to (image_tag fav.photo_url), fav
-  %h2= link_to fav.title, fav
+#favs.transitions-enabled
+  - @favs.each do |fav|
+    .box.panel.panel-default
+      = link_to (image_tag fav.photo_url), fav
+      .panel-body
+        %h2= link_to fav.title, fav
