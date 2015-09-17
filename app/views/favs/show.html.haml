@@ -1,3 +1,6 @@
 %h1= @fav.title
 %p= @fav.description
 %p= @fav.category
+=link_to "Back", root_path
+=link_to "Edit", edit_fav_path
+=link_to "Delete", fav_path, method: :delete, data: { confirm: "Are you sure?" }
