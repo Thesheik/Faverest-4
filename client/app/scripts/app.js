@@ -75,6 +75,15 @@ angular
       templateUrl: 'views/youtube.html'
     };
   })
+  .directive('backImg', function() {
+    return {
+      restrict: 'E',
+      scope: {
+        src: '='
+      },
+      templateUrl: 'views/backImg.html'
+    };
+  })
   .filter('trusted', function ($sce) {
     return function(url) {
       return $sce.trustAsResourceUrl(url);
