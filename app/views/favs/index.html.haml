@@ -1,2 +1,3 @@
 - @favs.each do |fav|
+  = link_to (image_tag fav.photo_url), fav
   %h2= link_to fav.title, fav

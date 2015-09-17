@@ -38,7 +38,7 @@ class FavsController < ApplicationController
   private
 
   def fav_params
-    params.require(:fav).permit(:title, :description, :category)
+    params.require(:fav).permit(:title, :description, :category, :photo_url)
   end
 
   def find_fav
