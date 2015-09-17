@@ -1,5 +1,5 @@
 class FavsController < ApplicationController
-  before_action :find_fav, only: [:show, :edit, :update, :destroy, :email]
+  before_action :find_fav, only: [:show, :edit, :update, :destroy, :upvote]
   def index
     @favs = Fav.all.order("created_at DESC")
   end
@@ -33,6 +33,11 @@ class FavsController < ApplicationController
   def destroy
     @fav.destroy
     redirect_to root_path
+  end
+
+  def upvote
+    @fav.upvote_by current_user
+    redirect_to :back
   end
 
   private
