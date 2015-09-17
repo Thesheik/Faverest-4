@@ -1,5 +1,7 @@
 class FavsController < ApplicationController
   before_action :find_fav, only: [:show, :edit, :update, :destroy, :upvote]
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @favs = Fav.all.order("created_at DESC")
   end

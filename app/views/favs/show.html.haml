@@ -14,5 +14,6 @@
               = link_to like_fav_path(@fav), method: :put, class: "btn btn-default" do
                 %span.glyphicon.glyphicon-heart
                   = @fav.get_upvotes.size
-              =link_to "Edit", edit_fav_path, class: "btn btn-default"
-              =link_to "Delete", fav_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+              - if user_signed_in?
+                =link_to "Edit", edit_fav_path, class: "btn btn-default"
+                =link_to "Delete", fav_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
