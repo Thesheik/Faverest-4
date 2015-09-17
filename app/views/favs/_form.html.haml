@@ -1,0 +1,19 @@
+= simple_form_for @fav, html: { multipart: true } do |f|
+  - if @fav.errors.any?
+    #errors
+      %h2
+      = pluralize(@fav.errors.count, "error")
+      prevented this Fav from saving
+      %ul
+        - @fav.errors.full_messages.each do |msg|
+          %li= msg
+
+
+  .form-group
+    = f.input :title, input_html: { class: 'form-comtrol' }
+  .form-group
+    = f.input :description, input_html: { class: 'form-comtrol' }
+  .form-group
+    = f.input :category, input_html: { class: 'form-comtrol' }
+
+  = f.button :submit, class: "btn btn-primary"
