@@ -1,28 +1,23 @@
-== README
+== Faverest.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The one place to store all your favorite interests and share it with friends.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+User Stories:
+* As a non user I want to be able to view favorites that current users have added
+* As a user I want to be able to create an account
+* As a user I want to be able to Sign in
+* As a user I want to be able to Sign out
+* As a user I want to be able to create a new favorite
+* As a user I want to be able to edit my favoite
+* As a user I want to be able to delete my favorite
+* As a user I want to be able to upload url for my favorite item
+* As a user I want to be able to vote on my favorite items
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Future additions.
+
+* I would like to add functionality for users to share and interact with friends that have a faverest account.
+* I would like to add functionality for users to login with facebook, twitter, google etc...
+* I would like to add functionality for users to 
+* I would like to add functionality for users to
+* I would like to add functionality for users to
